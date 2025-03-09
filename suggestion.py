@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from second_half_year.lesson_1.gen_words import generate_words
+from gen_words import generate_words
 
 app = Flask(__name__)
 

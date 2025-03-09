@@ -152,8 +152,8 @@ def suggest():
     # Список слов, которые будет использовать программа
     WORDS = generate_words(100, 9)
     suggestions = [word for word in WORDS if word.startswith(prefix)]
-    #return '\n'.join(suggestions) + '\n'
-    return jsonify(suggestions)
+    return '\n'.join(suggestions) + '\n'
+    #return jsonify(suggestions)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5031)
